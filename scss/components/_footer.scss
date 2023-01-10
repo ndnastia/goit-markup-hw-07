@@ -3,23 +3,23 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &__container {
+    &__section {
         display: flex;
         justify-content: flex-start;
         align-items: baseline;
     }
     
-    &__icon {
+    &__list {
         display: flex;
         gap: 10px;
     }
     
-    &__list-icon {
+    &__item {
         width: 44px;
         height: 44px;
     }
     
-    &__link-icon {
+    &__link {
         fill: $body-color;
         background-color: rgba(255, 255, 255, 0.1);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,7 +33,7 @@
         }
     }
 
-    &__join {
+    &__title {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -49,27 +49,37 @@
         color: $logo-text-footer;
     }
     
-    &__address-section {
+    &__address {
         font-style: normal;
         margin-top: 20px;
     }
-    
-    &__address-container {
+
+    &__address-link {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $body-color;
+        text-decoration: none;
+        margin-bottom: 12px;
+        display: block;
+    }
+
+    &__container {
         margin-right: 70px;
     }
     
-    &__join-container {
+    &__join {
         margin-right: 93px;
     }
 
-    &__subscribe-form {
+    &__form {
         display: flex;
         gap: 12px;
         justify-content: space-between;
         align-items: flex-end;
     }
     
-    &__subscribe {
+    &__label {
         margin-bottom: 20px;
         font-family: 'Roboto';
         font-weight: 700;
@@ -85,7 +95,7 @@
         height: 50px;
     }
     
-    &__subscribe-email {
+    &__input {
         width: 100%;
         height: 100%;
         padding: 15px 12px 15px 16px;
@@ -120,18 +130,8 @@
         fill: currentColor;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-    &__address {
-        font-size: 14px;
-        line-height: 1.714;
-        letter-spacing: 0.03em;
-        color: $body-color;
-        text-decoration: none;
-        margin-bottom: 12px;
-        display: block;
-    }
     
-    &__contact-bottom {
+    &__contacts {
         display: block;
         margin-bottom: 12px;
     
